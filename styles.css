@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, #162447, #f9f9f9);
+}
+
+.top {
+  text-decoration: none;
+  color: #411f1f;
+}
+
+header:hover, .top:hover {
+  background-color: #ed6663;
+  color: white;
+}
+
+.logo {
+  background-color: #30475e;
+  height: 50px;
+  padding-top: 10px;
+}
+
+.sign {
+  align-items: center;
+  width: 180px;
+  height: 45px;
+  padding-left: 20px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  margin-top: 0;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-around;
+  font-size: 25px;
+  font-family: 'Pacifico', cursive;
+}
+
+ul:hover {
+  font-size: 30px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
+  margin-top: 20px;
+  background: linear-gradient(to right, #162447, #f9f9f9);
+  height: 400px;
+}
+
+.presentation, #button-start {
+  background: linear-gradient(to right, #cff1ef, #f9f9f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cover {
+  width: 500px;
+}
+
+.cta-start {
+  border: 0px solid #cff1ef;
+  width: 70px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#button-start {
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+#button-start:hover {
+  color: #FFFFFF;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF;
+}
+
+footer {
+  background: linear-gradient(to right, #162447, #f9f9f9);
+}
+
+.creator {
+  text-align: center;
+  font-size: 13px;
+  font-family: 'Indie Flower', cursive;
+  background: linear-gradient(to right, #cff1ef, #f9f9f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* NOTE: Second Page: Biography */
+
+main {
+  display: flex;
+  background: linear-gradient(to right, #162447, #f9f9f9);
+  padding: 10px 0 0 20px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.main-text {
+  /* float: left; */
+  width: 85%;
+  padding: 15px;
+  margin-right: 10px;
+  line-height: 1.3;
+}
+
+.bio {
+  /* float: right; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 5px;
+  width: 80%;
+}
+
+.bio-img {
+  max-width: 500px;
+}
+
+.bio-table {
+  font-size: 20px;
+  border-spacing: 20px;
+  font-weight: bolder;
+}
+
+.main-text {
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(to right, #cff1ef, #f9f9f9);
+  /* background: linear-gradient(to right, #e94560, #f9f9f9); */ /* NOTE: I'm not sure which color palette is more beautiful */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+strong {
+  font-size: 25px;
+  -webkit-text-fill-color: #e94560;
+}
+
+.stress:hover {
+  /* text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF; */ /* NOTE: shadow effect, it may be choosen later */
+  -webkit-text-fill-color: #e94560;
+  text-decoration: none;
+}
+
+/* NOTE: Zoom */
+/* [1] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .9s ease;
+}
+
+/* [2] Transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
+}
+
+
+/* NOTE: The last page: Discography */
+.albums {
+  margin: 20px;
+}
+
+.album_cover {
+  margin: 20px;
+  width: 330px;
+  height: 250px;
+  border: 1px solid black;
+  box-shadow: -49px 33px 34px -12px rgba(0, 0, 0, 0.51);
+  z-index: 2;
+}
+
+.album_cover:hover {
+  transform: scale(1.1);
+  transition: transform .9s ease;
+}
+
+.disco {
+  margin: 20px;
+  display: contents;
+  width: 100%;
+}
+
+#biography, #discography {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-family: 'Pacifico', cursive;
+}
+
+
+.bottom-container {
+  text-align: center;
+}
